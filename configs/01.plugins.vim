@@ -9,4 +9,6 @@ Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'liuchengxu/vim-which-key'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()

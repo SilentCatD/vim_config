@@ -5,4 +5,5 @@
 - AceJump (easymotion)
 - IdeaVim-EasyMotion (easymotion)
 - WhichKey (vim-which-key
-
+4. More deps
+- Rg: `brew install ripgrep`
