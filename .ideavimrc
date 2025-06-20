@@ -118,5 +118,6 @@ map <leader>n :NERDTree<CR>
 
 " Plug 'liuchengxu/vim-which-key'
 set which-key
+set notimeout
 set timeoutlen=500
 
