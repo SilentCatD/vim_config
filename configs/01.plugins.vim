@@ -1,0 +1,11 @@
+call plug#begin('~/.config/nvim/bundle')
+Plug 'ellisonleao/gruvbox.nvim'
+Plug 'chaoren/vim-wordmotion'
+Plug 'machakann/vim-highlightedyank'
+Plug 'tpope/vim-commentary'
+Plug 'easymotion/vim-easymotion'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
+Plug 'itchyny/lightline.vim'
+call plug#end()
