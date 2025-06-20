@@ -13,7 +13,6 @@ let g:EasyMotion_add_search_history = 0
 map <leader>k <Plug>(easymotion-sn)
 map <leader>j <Plug>(easymotion-fn)
 
-
 " terryma/vim-multiple-cursors
 let g:multi_cursor_use_default_mapping=0
 
@@ -36,3 +35,6 @@ set timeoutlen=500
 map <leader>sf :GFiles<cr>
 map <leader>sr :Buffers<cr>
 map <leader>ss :Rg<cr>
+
+" itchyny/lightline.vim
+let g:lightline={ 'enable': {'statusline': 1, 'tabline': 0} }
