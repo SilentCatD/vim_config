@@ -1,0 +1,117 @@
+" keys
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
+" reload current config
+map <leader>p <Action>(IdeaVim.ReloadVimRc.reload) :noh<cr>
+
+" <esc> to turn highlight off
+nnoremap <silent> <esc> <esc>:noh<cr>
+nnoremap <cr> <Nop>
+
+" Quick searches
+map <leader>sc <Action>(GotoClass)
+map <leader>sf <Action>(GotoFile)
+map <leader>ss <Action>(GotoSymbol)
+map <leader>sa <Action>(GotoAction)
+map <leader>sr <Action>(RecentFiles)
+
+" Classes navigation
+" gd - Go to declaration by default
+map gi <Action>(GotoImplementation)
+
+" Show hover info
+map <leader>h <Action>(ShowHoverInfo)
+
+" Quick refactoring
+map <leader>rn <Action>(RenameElement)
+map <leader>rr <Action>(Refactorings.QuickListPopupAction)
+
+" Toggle distraction free mode
+map <leader>df <Action>(ToggleDistractionFreeMode)
+
+" Terminal
+map <leader>ti <Action>(Terminal.OpenInTerminal)
+map <leader>tt <Action>(ActivateTerminalToolWindow)
+
+
+" configs
+" search
+" case insensitive
+set ignorecase
+" smart case search
+set smartcase
+" highlight search
+set hlsearch
+" incremental search
+set incsearch
+
+" space
+" see multiple spaces as tabstops so <BS> does the right thing
+set softtabstop=4
+" number of columns occupied by a tab
+set tabstop=4
+" converts tabs to white space
+set expandtab
+" width for autoindents
+set shiftwidth=4
+" don't wrap line
+set nowrap
+" indent a new line the same amount as the line just typed
+set autoindent
+
+" editing
+" show a few lines of context around the cursor
+set scrolloff=10
+" add relative line numbers
+set relativenumber
+" show the mode you are on the last line
+set showcmd
+" turn-off bell on invalid input
+set visualbell
+
+" cmd
+" set the commands to save in history
+set history=1000
+
+" others
+" using system clipboard
+set clipboard=unnamedplus
+" don't use swap file
+set noswapfile
+set nobackup
+
+" Plugin settings
+
+" Plug 'chaoren/vim-wordmotion'
+" Move to end of next word or case
+map w [w
+" Move to end of next word or case
+map e ]w
+" Move to start of previous word or case
+map b [b
+
+" Plug 'machakann/vim-highlightedyank'
+Plug 'machakann/vim-highlightedyank'
+
+" Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-commentary'
+
+" Plug 'easymotion/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
+map <leader>k <Plug>(easymotion-sn)
+map <leader>j <Plug>(easymotion-fn)
+
+" Plug 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-multiple-cursors'
+nmap <C-n> <Plug>NextOccurrence
+xmap <C-n> <Plug>NextOccurrence
+xmap <C-x> <Plug>SkipOccurrence
+xmap <C-p> <Plug>RemoveOccurrence
+
+" Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
+
+" Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree'
+map <leader>n :NERDTree<CR>
