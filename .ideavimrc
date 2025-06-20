@@ -115,3 +115,8 @@ Plug 'tpope/vim-surround'
 " Plug 'preservim/nerdtree'
 Plug 'preservim/nerdtree'
 map <leader>n :NERDTree<CR>
+
+" Plug 'liuchengxu/vim-which-key'
+set which-key
+set timeoutlen=500
+

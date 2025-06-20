@@ -2,9 +2,12 @@
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
-map <leader>p :so%<cr> :noh<cr>      " reload current config
+" " reload current config
+" map <leader>p :so%<cr> :noh<cr>
+map <silent> <leader>p :so $MYVIMRC :noh<cr>
 
-nnoremap <silent> <esc> <esc>:noh<cr> " <esc> to turn highlight off
+" <esc> to turn highlight off
+nnoremap <silent> <esc> <esc>:noh<cr> 
 nnoremap <cr> <Nop>
 
 " configs
