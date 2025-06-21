@@ -103,6 +103,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'tpope/vim-commentary'
 
 " Plug 'easymotion/vim-easymotion'
+let g:EasyMotion_do_mapping = 0
 Plug 'easymotion/vim-easymotion'
 map <leader>k <Plug>(easymotion-sn)
 map <leader>j <Plug>(easymotion-fn)
